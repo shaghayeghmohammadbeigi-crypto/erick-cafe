@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+    --height-header: 744px;
+    --box-shadow: 0px 20px 40px 0px #0000000D;
+
+}
+
+@font-face {
+    font-family: BiYekan;
+    src: url(../fonts/Yekan.ttf);
+}
+
+@theme {
+    --font-yekan: BiYekan;
+}
+
+.slider {
+    .swiper {
+        width: 100%;
+        height: auto !important;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto !important;
+        object-fit: cover;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #F2E5DA;
+    border-radius: 14px;
+
+    svg {
+        width: 20px;
+        height: 20px;
+
+        path {
+            fill: black;
+        }
+    }
+}

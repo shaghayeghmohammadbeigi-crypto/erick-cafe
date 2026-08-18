@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/output.css ">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-[#FFF8F5] bg-[url(/src/images/vector-1.png),url(/src/images/vector-2.png)] bg-no-repeat bg-bottom">
+        <!--header-->
+        <div class="w-full">
+            <div class="max-w-307 mx-auto flex lg:justify-between justify-center items-center h-[110px] ">
+                <img src="./src/images/logo.png" alt="" class="w-[147px] h-[51px]">
+                <div class="lg:flex gap-x-2.25 items-center hidden">
+                    <div class="lg:flex flex-col hidden">
+                        <span class="font-yekan inline-block text-left text-[22px] text-[#9E624C] font-bold">-021</span>
+                        <span class="font-yekan text-[18px] text-[#28221E]">123232434</span>
+                    </div>
+                    <div class="w-12.5 h-12.5 rounded-full bg-[#F2E5DA] lg:flex justify-center items-center hidden">
+                        <img src="./src/images/ph_coffee-bean-fill.png" alt="" class="lg:block hidden">
+                    </div>
+                    <img src="./src/images/Frame-112.png" alt=""
+                        class="lg:hidden block mr-5 w-8.75 h-8.75 cursor-pointer menu-right">
+                </div>
+            </div>
+        </div>
+        <!--center-->
+        <div class="w-full">
+            <div class="lg:w-1/2 mx-auto lg:mt-20 mt-5 flex justify-center flex-col">
+                <div class="lg:w-[98px] lg:h-[98px] w-[78px] h-[78px] rounded-full bg-[#F2E5DA] mx-auto items-center justify-center flex">
+                    <img src="./src/images/Vector.png" alt="" class="lg:w-10.5 lg:h-10.5 w-[34px] h-[34px]">
+                </div>
+                <span class="mx-auto lg:mt-9.75 mt-5 lg:text-[30px] text-[20px] text-[#28221E] font-yekan font-bold">ثبت نام / ورود</span>
+                <span class="mx-auto lg:text-[16px] text-[14px] text-[#9B9895] font-yekan mt-[23px] text-nowrap">برای ورود یا ثبت نام شماره تماس
+                    خود را وارد کنید!</span>
+                    <!--input-->
+                <div class="mt-[25px] mx-auto">
+                    <span class="text-[15px] text-[#28221E] font-yekan">شماره تماس</span>
+                    <div
+                        class="lg:w-[351px] w-[322px] h-[51px] border border-[#9E624C] rounded-[9px] border-solid bg-white mx-auto flex items-center">
+                        <label for="phone" class="block font-yekan font-bold text-[16px] text-[#28221f] mb-3">
+                        </label>
+                        <input type="tel" id="phone" name="phone" inputmode="numeric" maxlength="11"
+                            pattern="09[0-9]{9}" required 
+                            class="w-full h-full outline-none bg-transparent font-yekan text-[18px] text-[#28221f] placeholder:text-[#aaa]"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11)">
+                        <img src="./src/images/Vectorr.png" alt="" class="pl-4">
+                    </div>
+                </div>
+                <div class="lg:w-[351px] w-[322px] h-[55px] bg-[#9E624C] rounded-[9px] mx-auto mt-6.25 flex items-center justify-center">
+                    <a class="text-[16px] text-white font-yekan" href="verify.html">ثبت نام / ورود</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

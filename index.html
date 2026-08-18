@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./src/css/output.css ">
+  <title>erick-cafe</title>
+</head>
+
+<body>
+  <!--wrapper-->
+  <div class="wrapper w-full">
+    <!--header-->
+    <div
+      class="w-full h-(--height-header) bg-[#FFF8F5] bg-[url(/src/images/bg-header.png)] bg-no-repeat bg-bottom-left pt-9.25">
+      <!--top header-->
+      <div class="max-w-381.5  lg:px-10 mx-auto lg:h-12.75 flex justify-between">
+        <!--div right-->
+        <div class="flex gap-x-2.25 items-center">
+          <div class="lg:flex flex-col hidden">
+            <span class="font-yekan inline-block text-left text-[22px] text-[#9E624C] font-bold">-021</span>
+            <span class="font-yekan text-[18px] text-[#28221E]">123232434</span>
+          </div>
+          <div class="w-12.5 h-12.5 rounded-full bg-[#F2E5DA] lg:flex justify-center items-center hidden">
+            <img src="./src/images/ph_coffee-bean-fill.png" alt="" class="lg:block hidden">
+          </div>
+          <img src="./src/images/Frame-112.png" alt=""
+            class="lg:hidden block mr-5 w-8.75 h-8.75 cursor-pointer menu-right">
+        </div>
+        <!--end div right-->
+        <!--div center-->
+        <div>
+          <img class="w-36-75 h-12.75" src="./src/images/logo.png" alt="">
+        </div>
+        <!--end div center-->
+        <!--div left-->
+        <div class="flex flex-row gap-x-3 items-center">
+          <a class="font-yekan rounded-[100px] border border-black py-3.5 px-4.5 lg:block hidden" href="login.html">ورود /ثبت
+            نام</a>
+          <img class="w-12.5 h-12.5 lg:block hidden" src="./src/images/Frame- 3.png" alt="">
+          <img src="./src/images/Frame-113.png" alt="" class="lg:hidden block ml-5">
+        </div>
+        <!--end div left-->
+      </div>
+      <!--end top header-->
+      <!--menu-->
+      <div
+        class="max-w-381.5 h-17 bg-[#28221E] mx-auto mt-8.75 rounded-[100px] lg:flex hidden justify-between items-center">
+        <!--menu right-->
+        <div class="pr-20">
+          <div class="navbar shadow-sm">
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-white font-yekan text-[16px]">صفحه اصلی</a></li>
+                <li>
+                  <details>
+                    <summary class="text-white font-yekan text-[16px]">لیست محصولات</summary>
+                    <ul class="bg-[#28221E] rounded-t-none p-2">
+                      <li><a class="font-yekan text-[16px] text-white">لیست محصولات1</a></li>
+                      <li><a class="font-yekan text-[16px] text-white">لیست محصولات2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a class="text-white font-yekan text-[16px]">خدمات</a></li>
+                <li><a class="text-white font-yekan text-[16px]">آموزش ها</a></li>
+                <li><a class="text-white font-yekan text-[16px]">درباره ما</a></li>
+                <li><a class="text-white font-yekan text-[16px]">تماس با ما</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end menu right-->
+        <!--menu-left-->
+        <div class="flex rounded-[37px] w-32 h-10 bg-[#534E4B] items-center ml-3.5 px-[10.5px]  py-3 gap-x-1.25">
+          <span class="text-[16px] text-white capitalize font-bold ml-1.5">erick.cafe</span>
+          <img src="./src/images/instagram.png" alt="">
+        </div>
+        <!--end menu-left-->
+      </div>
+      <!--end menu-->
+      <!--bottom header-->
+      <div class="w-full">
+        <div
+          class="lg:max-w-381.5 w-[90%] mx-auto p-5 lg:h-auto bg-[#28221E] lg:bg-[#FFF8F5] rounded-[20px] mt-9.25 flex lg:flex-row flex-col lg:gap-x-5 gap-y-5 lg:justify-between items-center">
+          <div
+            class="lg:w-114 w-full lg:h-110.25 h-auto bg-[#28221E] rounded-[20px] lg:px-16.25 px-5 mx-auto flex flex-col lg:items-start items-center">
+            <img src="./src/images/Erick Coffee.png" alt="" class="lg:mt-21.25 mt-8 lg:w-auto w-30">
+            <div class="relative lg:mt-3 mt-3 w-full flex lg:justify-start justify-center">
+              <img src="./src/images/Group-5.png" alt="" class="relative lg:w-70.50 lg:h-12.5 w-55 h-auto">
+            </div>
+            <div
+              class="lg:mt-10 mt-6 lg:text-[19px] text-[14px] text-[#F2E5DA] font-yekan whitespace-nowrap lg:text-right text-center">
+              کامل ترین تجهیزات کافه و رستوران در ایران
+            </div>
+            <div
+              class="flex justify-between items-center w-58 h-12.55 px-5 bg-white/20 rounded-[100px] lg:mt-11.25 mt-7">
+              <a href="#" class="text-[16px] text-white leading-12.5 font-yekan">
+                مشاهده محصولات
+              </a>
+              <img src="./src/images/arrow-left.png" alt="">
+            </div>
+          </div>
+          <!-- Slider -->
+          <div class="lg:flex-1 w-full lg:h-110.25 h-55 min-w-0">
+            <div class="swiper mySwiper w-full h-full rounded-[20px]">
+              <div class="swiper-wrapper h-full!">
+                <div class="swiper-slide h-full! w-full!">
+                  <img src="./src/images/Frame-11.png" alt="" class="w-full h-full object-fill block">
+                </div>
+
+                <div class="swiper-slide h-full! w-full!">
+                  <img src="./src/images/img-1.jpg" alt="" class="w-full h-full object-fill block">
+                </div>
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end bottom header-->
+    </div>
+    <!--end header-->
+    <!--menu shift right-->
+    <div
+      class="w-75 h-screen bg-[#28221E] absolute -right-full z-10 top-0 menu-project transition-all duration-300 ease-initialblock">
+      <ul class="menu menu-xs bg-[#28221E] rounded-box max-w-xs w-full">
+        <li>
+          <span
+            class="text-rose-700  bg-[#ffffff] absolute text-[20px] -left-2 -top-2 close-menu cursor-pointer">&times;</span>
+        </li>
+        <li>
+          <br />
+          <br />
+          <br />
+        </li>
+        <li>
+          <a class="font-yekan text-[16px] text-white">
+            صفحه اصلی
+          </a>
+        </li>
+        <li>
+          <details open>
+            <summary class="font-yekan text-[16px] text-white">
+              لیست محصولات
+            </summary>
+            <ul>
+              <li>
+                <a class="font-yekan text-[14px] text-white">
+                  لیست محصولات شماره 1
+                </a>
+              </li>
+              <li>
+                <a class="font-yekan text-[14px] text-white">
+                  لیست محصولات شماره 2
+                </a>
+              </li>
+              <li>
+              <li>
+                <a class="font-yekan text-[14px] text-white">
+                  لیست محصولات شماره 3
+                </a>
+              </li>
+        </li>
+      </ul>
+      </details>
+      </li>
+      <li>
+        <a class="font-yekan text-[16px] text-white">
+          خدمات
+        </a>
+      </li>
+      <li>
+        <a class="font-yekan text-[16px] text-white">
+          آموزش ها
+        </a>
+      </li>
+      <li>
+        <a class="font-yekan text-[16px] text-white">
+          درباره ما
+        </a>
+      </li>
+      <li>
+        <a class="font-yekan text-[16px] text-white">
+          تماس با ما
+        </a>
+      </li>
+      </ul>
+    </div>
+    <!--end menu shift right-->
+  </div>
+  <!--erick brands-->
+  <div class="w-full bg-[#F2E5DA] h-14.75 flex items-center overflow-hidden">
+    <div class="flex items-center gap-x-8.75 lg:gap-x-20 w-max mx-auto">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+      <img src="./src/images/image-8.png" alt="" class="w-20 h-auto lg:w-28.25 lg:h-6.25 shrink-0">
+    </div>
+  </div>
+  <!--end erick brands-->
+  <!--products-->
+  <div class="w-full h-auto lg:mt-18.25 mt-6">
+    <div class="max-w-381.5 h-22.5 mx-auto flex items-center justify-between px-3 py-5">
+      <div class="flex gap-x-1">
+        <div class="w-10 h-10 flex  lg:w-15.5 lg:h-15.5">
+          <img src="./src/images/Vector.png" alt="" class="lg:pt-3">
+        </div>
+        <div class="flex flex-col">
+          <span class="inline-block font-yekan lg:text-[25px] text-[16px] font-bold">دسته بندی محصولات</span>
+          <span class="inline-block font-yekan lg:text-[16px] text-[12px]">از میان بهترین ها ، بهترین هارا برای شما
+            فراهم کرده ایم!</span>
+        </div>
+      </div>
+      <div class="gap-x-2 lg:flex hidden">
+        <div class="w-10 h-10 bg-[#F2E5DA] flex items-center justify-center rounded-[14px]">
+          <img src="./src/images/arrow-down.png" alt="">
+        </div>
+        <div class="w-10 h-10 bg-[#F2E5DA] flex items-center justify-center rounded-[14px] rotate-180">
+          <img src="./src/images/arrow-down.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!--Swiper -->
+    <div
+      class="category-swiper swiper w-full lg:max-w-381.5 h-auto mx-auto lg:pt-15 overflow-hidden lg:overfl!ow-visible">
+      <div class="swiper-wrapper lg:transf!orm-none lg:flex lg:gap-x-5 lg:items-center lg:justify-between pr-5 lg:pr-1">
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/ph_coffee-bean-bold.png" alt="" class="w-12.5 h-12.5">
+          </div>
+            <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">قهوه ساز ها</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/material-symbols_blender-sharp.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">آسیاب قهوه</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/mdi_shaker-outline.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">ابزار باریستا</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/bx_coffee.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">دم آوری قهوه</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/mdi_drink-ice.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">تجهیزات بار سرد</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/fluent-emoji-high-contrast_waffle.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">کرپ ساز صنعتی</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/mdi_kettle-steam-outline.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">بویلر آب جوش</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/gg_smart-home-boiler.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">سماور صنعتی</span>
+          </div>
+        </div>
+        <div class="swiper-slide w-21.5! lg:w-21.5! h-36 flex flex-col justify-center items-center">
+          <div class="w-21.5 h-26.75 flex items-center justify-center border border-[#E9E9E8] rounded-[10px]">
+            <img src="./src/images/ri_cake-3-line.png" alt="" class="w-12.5 h-12.5">
+          </div>
+          <div class="mt-3.5 flex justify-center">
+            <span class="font-yekan text-[14px] text-center">شو کیک</span>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+  <!--end products-->
+  <!--discounts-->
+  <div
+    class="w-full lg:h-250 h-170 flex items-center relative before:absolute before:inset-0 lg:before:bg-[url('/src/images/Clip-path-group.png')] before:bg-no-repeat before:bg-top-right before:opacity-30">
+    <div class="max-w-338.25 h-142 mx-auto">
+      <div class="lg:w-338.25 lg:h-142 h-61.75 w-87.5 bg-[#28221E] lg:rounded-[29px] p-10 relative rounded-xl ">
+        <span
+          class="text-center block font-yekan text-white lg:text-[24px] text-[18px] bg-[url(/src/images/Mask-group.png)]  bg-repeat-x  ">تخفیفات
+          ویژه</span>
+        <div
+          class="lg:w-300 lg:h-150 shadow-(--box-shadow) bg-white lg:rounded-[10px] mx-auto lg:mt-15 mt-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] lg:pt-11.5 pt-6 lg:pr-24 pr-4 lg:pl-20.25 pl-4 overflow-hidden w-77.75 h-106.5 absolute left-1/2 -translate-x-1/2 rounded-xl">
+          <div class="swiper coffeeCategorySlider w-full mb-4.75 overflow-hidden">
+            <div class="swiper-wrapper items-center">
+
+              <div class="swiper-slide w-auto!">
+                <span class="font-yekan font-bold lg:text-[20px] text-[14px] text-[#28221E] text-nowrap">
+                  دسته بندی ها
+                </span>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <span
+                  class="group relative lg:text-[16px] text-[12px] text-nowrap text-[#9B9895] font-yekan hover:cursor-pointer hover:text-[#9E624C]">
+                  دانه قهوه
+
+                  <div
+                    class="absolute right-0 lg:-bottom-5 -bottom-4 w-full h-0.5 bg-transparent group-hover:bg-[#9E624C] transition-all duration-150 ease-in-out">
+                  </div>
+                </span>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <span
+                  class="group relative lg:text-[16px] text-[12px] text-nowrap text-[#9B9895] font-yekan hover:cursor-pointer hover:text-[#9E624C]">
+                  آسیاب قهوه
+
+                  <div
+                    class="absolute right-0 lg:-bottom-5 -bottom-4 w-full h-0.5 bg-transparent group-hover:bg-[#9E624C] transition-all duration-150 ease-in-out">
+                  </div>
+                </span>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <span
+                  class="group relative lg:text-[16px] text-[12px] text-nowrap text-[#9B9895] font-yekan hover:cursor-pointer hover:text-[#9E624C]">
+                  ابزار باریستا
+
+                  <div
+                    class="absolute right-0 lg:-bottom-5 -bottom-4 w-full h-0.5 bg-transparent group-hover:bg-[#9E624C] transition-all duration-150 ease-in-out">
+                  </div>
+                </span>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <span
+                  class="group relative lg:text-[16px] text-[12px] text-nowrap text-[#9B9895] font-yekan hover:cursor-pointer hover:text-[#9E624C]">
+                  بویلر آب جوش
+
+                  <div
+                    class="absolute right-0 lg:-bottom-5 -bottom-4 w-full h-0.5 bg-transparent group-hover:bg-[#9E624C] transition-all duration-150 ease-in-out">
+                  </div>
+                </span>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <span
+                  class="group relative lg:text-[16px] text-[12px] text-nowrap text-[#9B9895] font-yekan hover:cursor-pointer hover:text-[#9E624C]">
+                  تجهیزات کافه و رستوران
+
+                  <div
+                    class="absolute right-0 lg:-bottom-5 -bottom-4 w-full h-0.5 bg-transparent group-hover:bg-[#9E624C] transition-all duration-150 ease-in-out">
+                  </div>
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="border border-[#E9E9E8] lg:mt-5 -mt-1"></div>
+          <div class="swiper coffeeSwiper mt-7.5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-80 w-88.75">
+                <div class="border mx-auto border-[#E9E9E8] rounded-[20px] p-5 lg:h-auto lg:w-80.25 w-full h-full">
+                  <div class="flex justify-end">
+                    <span
+                      class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+                  </div>
+                  <div class=" flex justify-center items-center"><img src="./src/images/image-13.png"
+                      class="lg:h-52.5 lg:w-32.25 w-21.25 h-34.25"></div>
+                  <p class="font-yekan text-[16px] mt-3.75">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+                  <h3 class="text-[#9B9895] text-[14px] font-yekan lg:mt-4.75 mt-0.5">دانه قهوه</h3>
+                  <div class="flex items-end flex-col lg:gap-y-2.5">
+                    <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-80 w-88.75">
+                <div class="border mx-auto border-[#E9E9E8] rounded-[20px] p-5 lg:h-auto lg:w-80.25 w-full h-full">
+                  <div class="flex justify-end">
+                    <span
+                      class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+                  </div>
+                  <div class=" flex justify-center items-center"><img src="./src/images/image-13.png"
+                      class="lg:h-52.5 lg:w-32.25 w-21.25 h-34.25"></div>
+                  <p class="font-yekan text-[16px] mt-3.75">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+                  <h3 class="text-[#9B9895] text-[14px] font-yekan lg:mt-4.75 mt-0.5">دانه قهوه</h3>
+                  <div class="flex items-end flex-col lg:gap-y-2.5">
+                    <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-80 w-88.75">
+                <div class="border mx-auto border-[#E9E9E8] rounded-[20px] p-5 lg:h-auto lg:w-80.25 w-full h-full">
+                  <div class="flex justify-end">
+                    <span
+                      class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+                  </div>
+                  <div class=" flex justify-center items-center"><img src="./src/images/image-13.png"
+                      class="lg:h-52.5 lg:w-32.25 w-21.25 h-34.25"></div>
+                  <p class="font-yekan text-[16px] mt-3.75">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+                  <h3 class="text-[#9B9895] text-[14px] font-yekan lg:mt-4.75 mt-0.5">دانه قهوه</h3>
+                  <div class="flex items-end flex-col lg:gap-y-2.5">
+                    <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-80 w-88.75">
+                <div class="border mx-auto border-[#E9E9E8] rounded-[20px] p-5 lg:h-auto lg:w-80.25 w-full h-full">
+                  <div class="flex justify-end">
+                    <span
+                      class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+                  </div>
+                  <div class=" flex justify-center items-center"><img src="./src/images/image-13.png"
+                      class="lg:h-52.5 lg:w-32.25 w-21.25 h-34.25"></div>
+                  <p class="font-yekan text-[16px] mt-3.75">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+                  <h3 class="text-[#9B9895] text-[14px] font-yekan lg:mt-4.75 mt-0.5">دانه قهوه</h3>
+                  <div class="flex items-end flex-col lg:gap-y-2.5">
+                    <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-80 w-88.75">
+                <div class="border mx-auto border-[#E9E9E8] rounded-[20px] p-5 lg:h-auto lg:w-80.25 w-full h-full">
+                  <div class="flex justify-end">
+                    <span
+                      class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+                  </div>
+                  <div class=" flex justify-center items-center"><img src="./src/images/image-13.png"
+                      class="lg:h-52.5 lg:w-32.25 w-21.25 h-34.25"></div>
+                  <p class="font-yekan text-[16px] mt-3.75">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+                  <h3 class="text-[#9B9895] text-[14px] font-yekan lg:mt-4.75 mt-0.5">دانه قهوه</h3>
+                  <div class="flex items-end flex-col lg:gap-y-2.5">
+                    <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide h-80 w-88.75">
+                <div class="border mx-auto border-[#E9E9E8] rounded-[20px] p-5 lg:h-auto lg:w-80.25 w-full h-fit">
+                  <div class="flex justify-end">
+                    <span
+                      class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+                  </div>
+                  <div class=" flex justify-center items-center"><img src="./src/images/image-13.png"
+                      class="lg:h-52.5 lg:w-32.25 w-21.25 h-34.25"></div>
+                  <p class="font-yekan text-[16px] mt-3.75">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+                  <h3 class="text-[#9B9895] text-[14px] font-yekan lg:mt-4.75 mt-0.5">دانه قهوه</h3>
+                  <div class="flex items-end flex-col lg:gap-y-2.5">
+                    <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+          </div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end discounts-->
+    <!--banner-->
+    <div class="w-full h-auto lg:mt-8 -mt-7">
+      <div
+        class="lg:max-w-350 w-fit lg:h-41.5 h-auto mx-auto lg:flex items-center lg:justify-between lg:gap-x-4.5 grid grid-cols-[161px_161px] grid-rows-3 content-end justify-items-center gap-3 lg:px-2">
+        <div
+          class="lg:w-83.75 lg:h-full w-83.75 h-41.5 bg-[#28221E] lg:rounded-3xl rounded-xl col-span-2 flex items-center justify-center">
+          <span class="font-yekan text-white lg:text-[30px] text-[14.28px] font-bold">جایگاه بنر</span>
+        </div>
+        <div
+          class="lg:w-83.75 lg:h-full w-40.25 h-43.75 bg-[#28221E] lg:rounded-3xl rounded-xl flex items-center justify-center">
+          <span class="font-yekan text-white lg:text-[30px] text-[14.28px] font-bold">جایگاه بنر</span>
+        </div>
+        <div
+          class="lg:w-83.75 lg:h-full w-40.25 h-43.75 bg-[#28221E] lg:rounded-3xl rounded-xl flex items-center justify-center">
+          <span class="font-yekan text-white lg:text-[30px] text-[14.28px] font-bold">جایگاه بنر</span>
+        </div>
+        <div
+          class="lg:w-83.75 lg:h-full w-83.75 h-41.5 bg-[#28221E] lg:rounded-3xl rounded-xl col-span-2 flex items-center justify-center">
+          <span class="font-yekan text-white lg:text-[30px] text-[14.28px] font-bold">جایگاه بنر</span>
+        </div>
+      </div>
+    </div>
+    <!--end banner-->
+    <!-- Best Selling Products -->
+    <div class="w-full h-31.5 mt-19.25 lg:px-3.5 lg:block hidden">
+      <div
+        class="lg:max-w-372.25 lg:h-31.5 max-w-87.75 h-53.5 mx-auto  border-2 border-solid border-[#E9E9E8] lg:rounded-[2222px] rounded-[20px] flex lg:justify-between items-center justify-center flex-col lg:flex-row">
+        <!--right-->
+        <div class="flex items-center justify-center lg:pr-9.25 lg:pl-5 gap-x-2.25 lg:py-5 flex-col lg:flex-row">
+          <img src="./src/images/Vector.png" alt="" class="lg:pt-5">
+          <div class="flex flex-col gap-y-2 mt-5">
+            <span class="lg:text-[30px] text-[16px] text-zinc-950 font-bold font-yekan text-center">پرفروش ترین
+              ها</span>
+            <span class="lg:text-[16px] text-[12px] text-zinc-950 font-yekan text-nowrap">پرفروش ترین محصولات اریک
+              کافه</span>
+          </div>
+        </div>
+        <!--left-->
+        <div
+          class="lg:w-258.25 lg:h-17.75 w-79.25 h-12.5 bg-[#E9E9E8] rounded-[20px] lg:ml-12.25 lg:my-auto flex items-center lg:justify-start lg:pr-4.5 pr-1 lg:gap-x-3 gap-x-4 overflow-hidden mt-6">
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">همه دسته بندی ها</span>
+          </div>
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">آسیاب قهوه</span>
+          </div>
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">ابزار باریستا</span>
+          </div>
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">بویلر آب جوش</span>
+          </div>
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">بویلر آب جوش</span>
+          </div>
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">تجهیزات کافه و رستوران</span>
+          </div>
+          <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+            <span class="lg:text-[16px] text-[12px] font-yekan text-nowrap">شو کیک</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--mobile-->
+    <div class="w-full h-31.5 mt-19.25 lg:px-3.5 block lg:hidden">
+      <div
+        class="lg:max-w-372.25 lg:h-31.5 max-w-87.75 h-53.5 mx-auto border-2 border-solid border-[#E9E9E8] lg:rounded-[2222px] rounded-[20px] flex lg:justify-between items-center justify-center flex-col lg:flex-row">
+        <!-- right -->
+        <div class="flex items-center justify-center lg:pr-9.25 lg:pl-5 gap-x-2.25 lg:py-5 flex-col lg:flex-row">
+          <img src="./src/images/Vector.png" alt="" class="lg:pt-5">
+
+          <div class="flex flex-col gap-y-2 mt-5">
+            <span class="lg:text-[30px] text-[16px] text-zinc-950 font-bold font-yekan text-center">پرفروش ترین
+              ها</span>
+            <span class="lg:text-[16px] text-[12px] text-zinc-950 font-yekan text-nowrap">پرفروش ترین محصولات اریک
+              کافه</span>
+          </div>
+        </div>
+        <!-- left -->
+        <div
+          class="lg:w-258.25 lg:h-17.75 w-79.25 h-12.5 bg-[#E9E9E8] rounded-[20px] lg:ml-12.25 lg:my-auto flex items-center lg:justify-start lg:pr-4.5 pr-1 lg:gap-x-3 gap-x-4 overflow-hidden mt-6">
+          <div class="swiper bestSwiper lg:hidden w-full h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">همه دسته بندی ها</span>
+                </div>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">آسیاب قهوه</span>
+                </div>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">ابزار باریستا</span>
+                </div>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">بویلر آب جوش</span>
+                </div>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">بویلر آب جوش</span>
+                </div>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">تجهیزات کافه و رستوران</span>
+                </div>
+              </div>
+              <div class="swiper-slide w-auto!">
+                <div class="w-auto h-11.25 hover:bg-white rounded-xl p-3 flex items-center">
+                  <span class="text-[12px] font-yekan text-nowrap">شو کیک</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--products-->
+    <!-- MOBILE SWIPER -->
+    <div class="lg:hidden w-90 h-auto mx-auto mt-25">
+      <div class="swiper productSwiper w-full">
+        <div class="swiper-wrapper">
+
+          <!-- صفحه اول سوییپر - 4 محصول -->
+          <div class="swiper-slide w-full!">
+            <div class="grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-4.5 justify-items-center">
+              <a href="index-2.html" class="block">
+                <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+
+                  <div class="flex justify-end">
+                    <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                      20%
+                    </span>
+                  </div>
+
+                  <div class="flex justify-center items-center">
+                    <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                  </div>
+
+                  <p class="font-yekan text-[16px] mt-3">
+                    دانه قهوه باکسی برند Boxilian
+                  </p>
+
+                  <div class="flex items-end flex-col">
+                    <span class="font-yekan text-[#9E624C]">
+                      ۲۴۰,۰۰۰ تومان
+                    </span>
+                  </div>
+
+                </div>
+              </a>
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+
+              </div>
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+
+              </div>
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- صفحه دوم سوییپر - 3 محصول -->
+          <div class="swiper-slide w-full!">
+            <div class="grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-4.5 justify-items-center">
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+
+              </div>
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+
+              </div>
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+              </div>
+              <div class="w-41.25 h-50.75 border-[1.5px] border-solid border-[#E9E9E8] rounded-lg p-3">
+                <div class="flex justify-end">
+                  <span class="font-yekan text-[14px] text-white bg-[#28221E] rounded-[31px] w-10 text-center">
+                    20%
+                  </span>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img src="./src/images/image-13.png" class="w-11.5 h-19">
+                </div>
+                <p class="font-yekan text-[16px] mt-3">
+                  دانه قهوه باکسی برند Boxilian
+                </p>
+                <div class="flex items-end flex-col">
+                  <span class="font-yekan text-[#9E624C]">
+                    ۲۴۰,۰۰۰ تومان
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DESKTOP GRID -->
+    <div
+      class="hidden lg:grid lg:w-372.25 h-auto mx-auto mt-15 grid-cols-4 grid-rows-2 gap-x- gap-y-9.75 justify-items-center">
+      <a href="index-2.html" class="block">
+        <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+          <div class="flex justify-end">
+            <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">
+              20%
+            </span>
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="./src/images/image-13.png" class="w-32.25 h-55">
+          </div>
+          <p class="font-yekan text-[16px] mt-3">
+            دانه قهوه باکسی برند Boxilian
+          </p>
+          <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">
+            دانه قهوه
+          </h3>
+          <div class="flex items-end flex-col">
+            <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">
+              340,000
+            </span>
+            <span class="font-yekan text-[#9E624C]">
+              ۲۴۰,۰۰۰ تومان
+            </span>
+          </div>
+        </div>
+      </a>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="w-80.25 h-102.5 border-[1.5px] border-solid border-[#E9E9E8] rounded-[20px] p-4.25">
+        <div class="flex justify-end">
+          <span class="font-yekan text-[20px] text-white bg-[#28221E] rounded-[31px] w-15 text-center">20%</span>
+        </div>
+        <div class="flex justify-center items-center">
+          <img src="./src/images/image-13.png" class="w-32.25 h-55">
+        </div>
+        <p class="font-yekan text-[16px] mt-3">دانه قهوه باکسی برند Boxilian</p>
+        <h3 class="text-[#9B9895] text-[14px] font-yekan mt-4.75">دانه قهوه</h3>
+        <div class="flex items-end flex-col">
+          <span class="font-yekan blur-[2px] text-[#9B9895] text-[20px] line-through">340,000</span>
+          <span class="font-yekan text-[#9E624C]">۲۴۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex justify-between mx-auto items-center mt-14.75 bg-[#9E624C] rounded-[100px] lg:w-51.25 w-42.25 h-10 lg:h-12.5 px-4.5">
+      <a href="#"
+        class="text-white lg:text-[16px] text-[14px] font-yekan lg:line-through-51.25 line-through-42.25">مشاهده
+        بیشتر</a>
+      <img src="./src/images/arrow-left.png" alt="">
+    </div>
+    <!--end Best Selling Products -->
+    <!-- erikh learning -->
+    <div class="w-full h-175 bg-[url(/src/images/Leaf.png)] bg-no-repeat bg-top-left">
+      <div
+        class="lg:max-w-377.25 lg:h-106.5 max-w-87.5 h-61.75 bg-[#28221E] lg:rounded-[29px] rounded-[20px] mx-auto mt-15">
+        <div class="flex lg:justify-between justify-center p-10">
+          <div class="lg:flex gap-x-29.75 hidden">
+            <img src="./src/images/menu-board.png" alt="" class="w-12.5 h-12.5">
+            <img src="./src/images/document-text.png" alt="" class="w-12.5 h-12.5">
+            <img src="./src/images/edit.png" alt="" class="w-12.5 h-12.5">
+          </div>
+
+          <span class="text-white lg:text-[30px] text-[28px] font-yekan">
+            آموزش های اریک کافه
+          </span>
+
+          <div class="lg:flex gap-x-29.75 flex-row-reverse hidden">
+            <img src="./src/images/menu-board.png" alt="" class="w-12.5 h-12.5">
+            <img src="./src/images/document-text.png" alt="" class="w-12.5 h-12.5">
+            <img src="./src/images/edit.png" alt="" class="w-12.5 h-12.5">
+          </div>
+        </div>
+        <div class="lg:w-350 lg:h-106.75 mx-auto mt-5 lg:flex lg:justify-between justify-center items-center hidden">
+          <div
+            class="lg:w-104.5 lg:h-full w-77.75 h-89 rounded-[20px] mx-auto lg:p-4.25 p-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] bg-white shadow-(--box-shadow)">
+            <img src="./src/images/Frame-54.png" alt="">
+            <p class="mt-2.75 font-yekan lg:text-[16px] text-[12px]">
+              لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+            </p>
+            <div class="flex justify-between items-center mt-9.5">
+              <div class="flex gap-x-2 justify-center items-center">
+                <a href="#" class="text-[#9E624C] text-center text-[12px] lg:text-[14px] font-yekan">
+                  مشاهده بیشتر
+                </a>
+                <img src="./src/images/arrow-left-brown.png" alt="">
+              </div>
+              <span class="lg:text-[14px] text-[12px] text-[#9B9895] font-yekan">
+                ۱۹ اردیبهشت ۱۴۰۳
+              </span>
+            </div>
+          </div>
+          <div
+            class="lg:w-104.5 lg:h-full w-77.75 h-89 rounded-[20px]  mx-auto lg:p-4.25 p-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] bg-white shadow-(--box-shadow)">
+            <img src="./src/images/Frame-544.png" alt="">
+            <p class="mt-2.75 font-yekan lg:text-[16px] text-[12px]">
+              لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+            </p>
+            <div class="flex justify-between items-center mt-9.5">
+              <div class="flex gap-x-2 justify-center items-center">
+                <a href="#" class="text-[#9E624C] text-center text-[12px] lg:text-[14px] font-yekan">
+                  مشاهده بیشتر
+                </a>
+                <img src="./src/images/arrow-left-brown.png" alt="">
+              </div>
+              <span class="lg:text-[14px] text-[12px] text-[#9B9895] font-yekan">
+                ۱۹ اردیبهشت ۱۴۰۳
+              </span>
+            </div>
+          </div>
+          <div
+            class="lg:w-104.5 lg:h-full w-77.75 h-89 rounded-[20px] mx-auto lg:p-4.25 p-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] bg-white shadow-(--box-shadow)">
+            <img src="./src/images/Frame-542.png" alt="">
+            <p class="mt-2.75 font-yekan lg:text-[16px] text-[12px]">
+              لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+            </p>
+            <div class="flex justify-between items-center mt-9.5">
+              <div class="flex gap-x-2 justify-center items-center">
+                <a href="#" class="text-[#9E624C] text-center text-[12px] lg:text-[14px] font-yekan">
+                  مشاهده بیشتر
+                </a>
+                <img src="./src/images/arrow-left-brown.png" alt="">
+              </div>
+              <span class="lg:text-[14px] text-[12px] text-[#9B9895] font-yekan">
+                ۱۹ اردیبهشت ۱۴۰۳
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-350 lg:h-106.75 mx-auto mt-5 flex lg:justify-between justify-center items-center lg:hidden">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="lg:w-104.5 lg:h-full w-77.75 h-89 rounded-[20px] mx-auto lg:p-4.25 p-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] bg-white shadow-(--box-shadow)">
+                  <img src="./src/images/Frame-54.png" alt="">
+                  <p class="mt-2.75 font-yekan lg:text-[16px] text-[12px]">
+                    لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+                  </p>
+                  <div class="flex justify-between items-center mt-9.5">
+                    <div class="flex gap-x-2 justify-center items-center">
+                      <a href="#" class="text-[#9E624C] text-center text-[12px] lg:text-[14px] font-yekan">
+                        مشاهده بیشتر
+                      </a>
+                      <img src="./src/images/arrow-left-brown.png" alt="">
+                    </div>
+                    <span class="lg:text-[14px] text-[12px] text-[#9B9895] font-yekan">
+                      ۱۹ اردیبهشت ۱۴۰۳
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="lg:w-104.5 lg:h-full w-77.75 h-89 rounded-[20px]  mx-auto lg:p-4.25 p-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] bg-white shadow-(--box-shadow)">
+                  <img src="./src/images/Frame-544.png" alt="">
+                  <p class="mt-2.75 font-yekan lg:text-[16px] text-[12px]">
+                    لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+                  </p>
+                  <div class="flex justify-between items-center mt-9.5">
+                    <div class="flex gap-x-2 justify-center items-center">
+                      <a href="#" class="text-[#9E624C] text-center text-[12px] lg:text-[14px] font-yekan">
+                        مشاهده بیشتر
+                      </a>
+                      <img src="./src/images/arrow-left-brown.png" alt="">
+                    </div>
+                    <span class="lg:text-[14px] text-[12px] text-[#9B9895] font-yekan">
+                      ۱۹ اردیبهشت ۱۴۰۳
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="lg:w-104.5 lg:h-full w-77.75 h-89 rounded-[20px] mx-auto lg:p-4.25 p-10 outline-10 outline-offset-1 outline-solid outline-[#FFFFFF1A] bg-white shadow-(--box-shadow)">
+                  <img src="./src/images/Frame-542.png" alt="">
+                  <p class="mt-2.75 font-yekan lg:text-[16px] text-[12px]">
+                    لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!
+                  </p>
+                  <div class="flex justify-between items-center mt-9.5">
+                    <div class="flex gap-x-2 justify-center items-center">
+                      <a href="#" class="text-[#9E624C] text-center text-[12px] lg:text-[14px] font-yekan">
+                        مشاهده بیشتر
+                      </a>
+                      <img src="./src/images/arrow-left-brown.png" alt="">
+                    </div>
+                    <span class="lg:text-[14px] text-[12px] text-[#9B9895] font-yekan">
+                      ۱۹ اردیبهشت ۱۴۰۳
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between mx-auto items-center lg:mt-14.75 mt-10 bg-[#9E624C] rounded-[100px] lg:w-51.25 w-42.25 h-10 lg:h-12.5 px-4.5">
+          <a href="#" class="text-white lg:text-[16px] text-[14px] font-yekan lg:line-through-51.25 line-through-42.25">
+            مشاهده بیشتر
+          </a>
+          <img src="./src/images/arrow-left.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!--end Erikh Learning -->
+    <!--bottom1-->
+    <div class="max-w-full lg:h-98.75 bg-[#28221E] lg:mt-29">
+      <div class="lg:w-247.5 h-full mx-auto flex flex-col">
+        <div class="flex flex-col items-center justify-center lg:pt-10.5 pt-7.75">
+          <img src="./src/images/Group-5.png" alt="">
+          <p
+            class="lg:w-95 w-73.5 h-12.5 lg:h-14.5 lg:pt-8.5 pt-7 text-white mx-auto text-center font-yekan lg:text-[16px] text-[14px]">
+            لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!</p>
+        </div>
+        <div
+          class="lg:flex lg:justify-between items-center mt-15 px-2 grid grid-cols-2 grid-rows-3 mx-auto gap-8  lg:gap-14">
+          <div class="flex gap-x-2 items-center">
+            <img src="./src/images/Ellipse-3.png" alt="" class="w-2 h-2">
+            <span class="text-white text-[14px] font-yekan">دسته بندی کلی یک</span>
+          </div>
+          <div class="flex gap-x-2 items-center">
+            <img src="./src/images/Ellipse-3.png" alt="" class="w-2 h-2">
+            <span class="text-white text-[14px] font-yekan">دسته بندی کلی یک</span>
+          </div>
+          <div class="flex gap-x-2 items-center">
+            <img src="./src/images/Ellipse-3.png" alt="" class="w-2 h-2">
+            <span class="text-white text-[14px] font-yekan">دسته بندی کلی یک</span>
+          </div>
+          <div class="flex gap-x-2 items-center">
+            <img src="./src/images/Ellipse-3.png" alt="" class="w-2 h-2">
+            <span class="text-white text-[14px] font-yekan">دسته بندی کلی یک</span>
+          </div>
+          <div class="flex gap-x-2 items-center">
+            <img src="./src/images/Ellipse-3.png" alt="" class="w-2 h-2">
+            <span class="text-white text-[14px] font-yekan">دسته بندی کلی یک</span>
+          </div>
+          <div class="flex gap-x-2 items-center">
+            <img src="./src/images/Ellipse-3.png" alt="" class="w-2 h-2">
+            <span class="text-white text-[14px] font-yekan">دسته بندی کلی یک</span>
+          </div>
+        </div>
+        <div class="border border-solid border-white/10 mt-8.75 lg:block hidden"></div>
+        <div class="flex lg:justify-between justify-center mx-auto lg:mx-0 mt-5 flex-col lg:flex-row">
+          <!--right-->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-x-2 mx-auto lg:mx-0">
+              <div class="bg-white/3 w-10 h-10 rounded-[100%] flex items-center">
+                <img src="./src/images/call.png" alt="" class="mx-auto">
+              </div>
+              <div class="flex items-center">
+                <span class="text-[18px] text-white font-yekan">123232434</span>
+                <span class="text-[22px] text-[#9E624C] font-yekan">-۰۲۱</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-2 mx-auto lg:mx-0">
+              <div class="bg-white/3 w-10 h-10 rounded-[100%] flex items-center">
+                <img src="./src/images/gps.png" alt="" class="mx-auto">
+              </div>
+              <span class="text-[14px] text-white font-yekan">تهران خیابان تهرانی کوچه تهران پلاک ۱۲</span>
+            </div>
+          </div>
+          <!--left-->
+          <div class="flex gap-x-2 mx-auto lg:mx-0">
+            <img src="./src/images/image-15.png" alt="">
+            <img src="./src/images/Frame-68.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end bottom1-->
+    <!--bottom2-->
+    <!--end bottom2-->
+    <div class="max-w-full h-14.25 bg-[#1A1613]">
+      <div class="lg:w-350 h-full mx-auto">
+        <div class="h-full flex items-center justify-between flex-col-reverse lg:flex-row">
+          <!--right-->
+          <div class="flex items-center gap-x-2">
+            <img src="./src/images/copyright.png" alt="">
+            <span class="text-[12px] text-white font-yekan">تمام حقوق این وب سایت متعلق به قهوه اریک میباشد</span>
+          </div>
+          <!--left-->
+          <div class="flex items-center gap-x-5.5 mt-10 lg:mt-0">
+            <img src="./src/images/facebook.png" alt="">
+            <img src="./src/images/whatsapp.png" alt="">
+            <img src="./src/images/instagram.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end wrapper-->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const menuRight = document.querySelector(".menu-right")
+      const menuProject = document.querySelector(".menu-project")
+      const closeMenu = document.querySelector(".close-menu")
+      console.log(closeMenu);
+
+      menuRight.addEventListener("click", () => {
+        menuProject.classList.remove("-right-full");
+        menuProject.classList.add("right-0");
+      });
+      closeMenu.addEventListener("click", () => {
+        menuProject.classList.add("-right-full");
+        menuProject.classList.remove("right-0");
+      });
+
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      const coffeeSwiper = new Swiper(".coffeeSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 1,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      const categorySwiper = new Swiper(".category-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        grabCursor: true,
+        allowTouchMove: true,
+        breakpoints: {
+          1024: {
+            enabled: false
+          }
+        }
+      });
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            enabled: false
+          }
+        }
+      });
+
+
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 25,
+      });
+
+      let productSwiper;
+
+      function initProductSwiper() {
+        if (window.innerWidth < 1024) {
+
+          if (!productSwiper) {
+            productSwiper = new Swiper(".productSwiper", {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              spaceBetween: 20,
+
+              allowTouchMove: true,
+              grabCursor: true,
+            });
+          }
+
+        } else {
+
+          if (productSwiper) {
+            productSwiper.destroy(true, true);
+            productSwiper = null;
+          }
+
+        }
+      }
+
+      initProductSwiper();
+
+      window.addEventListener("resize", initProductSwiper);
+
+      let bestSwiper = null;
+
+      function checkBestSwiper() {
+        if (window.innerWidth < 1024) {
+          if (!bestSwiper) {
+            bestSwiper = new Swiper(".bestSwiper", {
+              slidesPerView: "auto",
+              spaceBetween: 4,
+              freeMode: true,
+              allowTouchMove: true,
+              grabCursor: true
+            });
+          }
+        } else {
+          if (bestSwiper) {
+            bestSwiper.destroy(true, true);
+            bestSwiper = null;
+          }
+        }
+      }
+
+      checkBestSwiper();
+
+      window.addEventListener("resize", checkBestSwiper);
+
+      const coffeeCategorySlider = new Swiper(".coffeeCategorySlider", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        freeMode: true,
+        grabCursor: true,
+
+        breakpoints: {
+          0: {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+          },
+
+          768: {
+            slidesPerView: "auto",
+            spaceBetween: 40,
+          },
+
+          1024: {
+            slidesPerView: "auto",
+            spaceBetween: 65,
+          },
+        },
+      });
+    </script>
+</body>
+
+</html>
