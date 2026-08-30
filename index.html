@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -169,6 +169,9 @@
       </ul>
       </details>
       </li>
+      <li>
+        <a href="login.html" class="font-yekan text-[16px] text-white">ثبت نام</a>
+      </li>ّ
       <li>
         <a class="font-yekan text-[16px] text-white">
           خدمات
@@ -1214,187 +1217,208 @@
   <!--end wrapper-->
   <script src="./swiper-1/swiper-bundle.min.js"></script>
   <script>
-    const menuRight = document.querySelector(".menu-right")
-    const menuProject = document.querySelector(".menu-project")
-    const closeMenu = document.querySelector(".close-menu")
-    console.log(closeMenu);
+  const menuRight = document.querySelector(".menu-right")
+  const menuProject = document.querySelector(".menu-project")
+  const closeMenu = document.querySelector(".close-menu")
+  console.log(closeMenu);
 
-    menuRight.addEventListener("click", () => {
-      menuProject.classList.remove("-right-full");
-      menuProject.classList.add("right-0");
-    });
-    closeMenu.addEventListener("click", () => {
-      menuProject.classList.add("-right-full");
-      menuProject.classList.remove("right-0");
-    });
+  menuRight.addEventListener("click", () => {
+    menuProject.classList.remove("-right-full");
+    menuProject.classList.add("right-0");
+  });
 
-    var swiper = new Swiper('.mySwiper', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+  closeMenu.addEventListener("click", () => {
+    menuProject.classList.add("-right-full");
+    menuProject.classList.remove("right-0");
+  });
+
+
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
+  const coffeeSwiper = new Swiper(".coffeeSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
 
-    const coffeeSwiper = new Swiper(".coffeeSwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      768: {
+        slidesPerView: 1,
       },
 
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      1024: {
+        slidesPerView: 3,
       },
-
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-
-        768: {
-          slidesPerView: 1,
-        },
-
-        1024: {
-          slidesPerView: 3,
-        },
-      },
-    });
-
-    const categorySwiper = new Swiper(".category-swiper", {
-      slidesPerView: "auto",
-      spaceBetween: 16,
-      grabCursor: true,
-      allowTouchMove: true,
-      breakpoints: {
-        1024: {
-          enabled: false
-        }
-      }
-    });
-    var swiper = new Swiper('.myLearning', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-
-        768: {
-          slidesPerView: 1,
-        },
-        1024: {
-          enabled: false
-        }
-      }
-    });
+    },
+  });
 
 
-    var swiper = new Swiper('.mySwiper', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 25,
-    });
+  const categorySwiper = new Swiper(".category-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    grabCursor: true,
+    allowTouchMove: true,
 
-    let productSwiper;
-
-    function initProductSwiper() {
-      if (window.innerWidth < 1024) {
-
-        if (!productSwiper) {
-          productSwiper = new Swiper(".productSwiper", {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 20,
-
-            allowTouchMove: true,
-            grabCursor: true,
-          });
-        }
-
-      } else {
-
-        if (productSwiper) {
-          productSwiper.destroy(true, true);
-          productSwiper = null;
-        }
-
+    breakpoints: {
+      1024: {
+        enabled: false
       }
     }
+  });
 
-    initProductSwiper();
 
-    window.addEventListener("resize", initProductSwiper);
+  var swiper = new Swiper('.myLearning', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-    let bestSwiper = null;
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
 
-    function checkBestSwiper() {
-      if (window.innerWidth < 1024) {
-        if (!bestSwiper) {
-          bestSwiper = new Swiper(".bestSwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 4,
-            freeMode: true,
-            allowTouchMove: true,
-            grabCursor: true
-          });
-        }
-      } else {
-        if (bestSwiper) {
-          bestSwiper.destroy(true, true);
-          bestSwiper = null;
-        }
+      768: {
+        slidesPerView: 1,
+      },
+
+      1024: {
+        enabled: false
       }
     }
+  });
 
-    checkBestSwiper();
 
-    window.addEventListener("resize", checkBestSwiper);
+  var swiper = new Swiper('.mySwiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-    const coffeeCategorySlider = new Swiper(".coffeeCategorySlider", {
-      slidesPerView: "auto",
-      spaceBetween: 20,
-      freeMode: true,
-      grabCursor: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 25,
+  });
 
-      breakpoints: {
-        0: {
-          slidesPerView: "auto",
+
+  let productSwiper;
+
+  function initProductSwiper() {
+    if (window.innerWidth < 1024) {
+
+      if (!productSwiper) {
+        productSwiper = new Swiper(".productSwiper", {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
           spaceBetween: 20,
-        },
 
-        768: {
-          slidesPerView: "auto",
-          spaceBetween: 40,
-        },
+          allowTouchMove: true,
+          grabCursor: true,
 
-        1024: {
+          preventClicks: false,
+          preventClicksPropagation: false,
+        });
+      }
+
+    } else {
+
+      if (productSwiper) {
+        productSwiper.destroy(true, true);
+        productSwiper = null;
+      }
+
+    }
+  }
+
+  initProductSwiper();
+
+  window.addEventListener("resize", initProductSwiper);
+
+
+  let bestSwiper = null;
+
+  function checkBestSwiper() {
+    if (window.innerWidth < 1024) {
+
+      if (!bestSwiper) {
+        bestSwiper = new Swiper(".bestSwiper", {
           slidesPerView: "auto",
-          spaceBetween: 65,
-        },
+          spaceBetween: 4,
+          freeMode: true,
+          allowTouchMove: true,
+          grabCursor: true
+        });
+      }
+
+    } else {
+
+      if (bestSwiper) {
+        bestSwiper.destroy(true, true);
+        bestSwiper = null;
+      }
+
+    }
+  }
+
+  checkBestSwiper();
+
+  window.addEventListener("resize", checkBestSwiper);
+
+
+  const coffeeCategorySlider = new Swiper(".coffeeCategorySlider", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    freeMode: true,
+    grabCursor: true,
+
+    breakpoints: {
+      0: {
+        slidesPerView: "auto",
+        spaceBetween: 20,
       },
-    });
-  </script>
+
+      768: {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+      },
+
+      1024: {
+        slidesPerView: "auto",
+        spaceBetween: 65,
+      },
+    },
+  });
+
+</script>
 </body>
 
 </html>
