@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-rose-700: oklch(51.4% 0.222 16.935);
     --color-zinc-950: oklch(14.1% 0.005 285.823);
     --color-black: #000;
@@ -1782,6 +1783,9 @@
   .w-3\.75 {
     width: calc(var(--spacing) * 3.75);
   }
+  .w-4\/12 {
+    width: calc(4 / 12 * 100%);
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -1836,6 +1840,9 @@
   .w-32\.25 {
     width: calc(var(--spacing) * 32.25);
   }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
   .w-40\.25 {
     width: calc(var(--spacing) * 40.25);
   }
@@ -1856,6 +1863,9 @@
   }
   .w-58 {
     width: calc(var(--spacing) * 58);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
   }
   .w-71\.25 {
     width: calc(var(--spacing) * 71.25);
@@ -1892,6 +1902,12 @@
   }
   .w-90 {
     width: calc(var(--spacing) * 90);
+  }
+  .w-98 {
+    width: calc(var(--spacing) * 98);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-\[18\.86px\] {
     width: 18.86px;
@@ -2243,6 +2259,9 @@
   }
   .bg-\[\#ffffff\] {
     background-color: #ffffff;
+  }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
   }
   .bg-transparent {
     background-color: transparent;
@@ -2599,6 +2618,9 @@
     }
     .md\:w-7\/12 {
       width: calc(7 / 12 * 100%);
+    }
+    .md\:w-full {
+      width: 100%;
     }
   }
   @media (width >= 64rem) {
